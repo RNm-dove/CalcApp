@@ -23,8 +23,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         text1 = (EditText) findViewById(R.id.text1);
         text2 = (EditText) findViewById(R.id.text2);
-        text1.setInputType(InputType.TYPE_CLASS_NUMBER);//入力制限　TYPE_CLASS_NUMBERは数値　
-        text2.setInputType(InputType.TYPE_CLASS_NUMBER);
+        text1.setInputType(InputType.TYPE_CLASS_NUMBER|InputType.TYPE_NUMBER_FLAG_DECIMAL);//入力制限　TYPE_CLASS_NUMBERは数値　
+        text2.setInputType(InputType.TYPE_CLASS_NUMBER|InputType.TYPE_NUMBER_FLAG_DECIMAL);
 
         Button button_plus = (Button) findViewById(R.id.button_plus);
         button_plus.setOnClickListener(this);
